@@ -1,1 +1,243 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kisan Connect</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    background-color: #0d2818;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  /* Navbar */
+  nav {
+    background-color: #1e5631;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd54f;
+  }
+  .login-btn {
+    background-color: #7cb342;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  /* Hero Section */
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #0d2818, #1e5631);
+  }
+  .badge {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  .gold {
+    color: #ffd54f;
+  }
+  .hero p {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .hero-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn {
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .btn-green {
+    background-color: #7cb342;
+    color: white;
+  }
+  .btn-glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  /* Stats */
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .stat-box h3 {
+    color: #ffd54f;
+    font-size: 24px;
+  }
+  .stat-box p {
+    font-size: 12px;
+    color: #aaaaaa;
+  }
+  /* Sections */
+  .section {
+    padding: 50px 20px;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #ffd54f;
+  }
+  /* Cards */
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .card-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .card p {
+    font-size: 14px;
+    color: #bbbbbb;
+  }
+  /* Gallery */
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  /* Footer */
+  footer {
+    background-color: #05120a;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #888888;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
 
+<!-- Navbar -->
+<nav>
+  <div class="logo">🌾 KisanConnect</div>
+  <button class="login-btn">Login</button>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="badge">🚜 India's #1 Smart Farming Platform 2026</div>
+  <h1>Kheti Badi Ka <br><span class="gold">Naya Zamaana</span></h1>
+  <p>AI-powered farming solutions, real-time mandi bhav, aur direct market access — sab kuch ek hi platform par.</p>
+  
+  <div class="hero-buttons">
+    <button class="btn btn-green">🌱 Get Started</button>
+    <button class="btn btn-glass">▶ Watch Demo</button>
+  </div>
+
+  <div class="stats">
+    <div class="stat-box">
+      <h3>50K+</h3>
+      <p>Active Kisan</p>
+    </div>
+    <div class="stat-box">
+      <h3>1200+</h3>
+      <p>Villages</p>
+    </div>
+    <div class="stat-box">
+      <h3>98%</h3>
+      <p>Satisfaction</p>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="section">
+  <h2 class="section-title">Hamari Services</h2>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-icon">🌾</div>
+      <h3>Mandi Bhav</h3>
+      <p>Har din live mandi rates apne phone par paayein.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🤖</div>
+      <h3>AI Crop Doctor</h3>
+      <p>Fasal ki photo khinchein aur bimari ka ilaaj jaanein.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🚁</div>
+      <h3>Drone Monitoring</h3>
+      <p>Drone se apne khet ki nigrani karein.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="section" style="background-color: rgba(0,0,0,0.2);">
+  <h2 class="section-title">Kheti Ki Tasveerein</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400" alt="Farm">
+    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400" alt="Tractor">
+    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=400" alt="Veg">
+    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400" alt="Field">
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2026 KisanConnect. Made with 💚 for Indian Farmers.
+</footer>
+
+</body>
+      </html>
